@@ -7,19 +7,3 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-:root {
-  --ThemePrimaryColor: #5BA4A4;
-  --ThemeNeutralColor: #FFFFFF;
-  --BackgroundColor: #EFFAFA;
-  --FilterTabletsColor: #EEF6F6;
-  --FilterTabletsDarkColor: #000000;
-  --FontLightColor: #7B8E8E;
-  --FontDarkColor: #2C3A3A;
-  --FontNormalWeight: 500;
-  --FontBoldWeight: 700;
-  --FontFamily: Spartan;
-  --FontSizeL: 18px;
-  --FontSizeM: 15px;
-  --FontSizeS: 13px;
-  --FontSizeXS: 11px;
-}
