@@ -1,0 +1,18 @@
+.appHeader {
+  background-color: #5ba4a4;
+  background-image: url("/images/bg-header-desktop.svg");
+  background-size: cover;
+  height: 156px;
+  width: 100%;
+}
+.appBody {
+  max-width: 1110px;
+  margin: -36px auto 0;
+  height: 100%;
+}
+.App {
+  background-color: #effafa;
+  height: 100%;
+  font-size: 15px;
+  font-family: Spartan;
+}

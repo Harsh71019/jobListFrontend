@@ -1,0 +1,99 @@
+.jobDescriptionContainer {
+  display: flex;
+  height: auto;
+}
+
+.companyImage {
+  margin: 0 24px;
+  max-height: 88px;
+}
+
+.companyImage img {
+  height: 88px;
+  width: 88px;
+}
+
+.jobInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.companyName {
+  font-weight: 700;
+  line-height: 16px;
+  font-size: 15px;
+  color: #5ba4a4;
+  margin-right: 16px;
+  display: inline-block;
+}
+
+.row {
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+
+.jobNew {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #5ba4a4;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 14px;
+  font-size: 11px;
+  padding: 6px 8px 4px;
+  margin-right: 8px;
+}
+
+.jobFeatured {
+  display: inline-block;
+  border-radius: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 14px;
+  font-size: 11px;
+  padding: 6px 8px 4px;
+  margin-right: 8px;
+  background-color: #000000;
+}
+
+.position {
+  font-weight: 700;
+  color: #000000;
+  font-size: 18px;
+}
+
+.row:nth-of-type(3) {
+  font-size: 15px;
+  color: #7b8e8e;
+  margin-bottom: 0;
+}
+
+.jobDetails {
+  display: inline-block;
+}
+
+.separate {
+  display: inline-block;
+  margin: auto 16px;
+  background-color: #7b8e8e;
+  vertical-align: middle;
+  width: 4px;
+  height: 4px;
+  border-radius: 100px;
+  border-width: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .jobDescriptionContainer {
+    flex-direction: column;
+    padding-bottom: 16px;
+  }
+  .companyImage {
+    margin: -80px 24px 20px -8px;
+  }
+  .row {
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,40 @@
+.jobCardContainer {
+  display: flex;
+  background-color: #FFFFFF;
+  border-top-left-radius: 100 0;
+  border-bottom-left-radius: 0 100;
+  border-left-color: transparent;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-radius: 5px;
+  min-height: 88px;
+  margin-bottom: 24px;
+  padding: 32px 10px;
+  box-shadow: 0 15px 20px -5px rgba(13, 130, 130, 0.15);
+}
+
+.jobCardContainer.featured {
+  border-left-color: #5BA4A4;
+}
+
+.jobDetails {
+  flex: 1 1;
+  vertical-align: top;
+}
+
+.searchTags {
+  flex: 1 1;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .jobCardContainer {
+    margin-bottom: 124px;
+    flex-direction: column;
+    padding: 32px 40px;
+  }
+  .jobDetails {
+    border-bottom: solid 1px #b6c3c3;
+  }
+}

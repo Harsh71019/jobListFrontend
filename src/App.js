@@ -1,10 +1,14 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import ListJobs from "./components/ListJobs";
 
 function App() {
   return (
     <div className="App">
-      App Clean
+      <div className="appHeader" />
+      <div className="appBody">
+        <ListJobs />
+      </div>
     </div>
   );
 }
