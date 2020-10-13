@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
+import { SortContext } from "../context/SortContext";
+import "./Tags.css";
 
-const Tags = ({ jobs }) => {
-  console.log(jobs.tools);
+const Tags = ({ sort }) => {
+  const { onRemoveSort } = useContext(SortContext);
   return (
-    <div>
-      {jobs.tools}
+    <div className="Tags">
+      <div className="TagsLabel">{sort}</div>
+      <div className="TagsRemoveButton" onClick={() => onRemoveSort(sort)}>
+        <img
+          height="14"
+          width="14"
+          src={"/images/icon-remove.svg"}
+          alt={"Remove Sort"}
+        />
+      </div>
     </div>
   );
 };

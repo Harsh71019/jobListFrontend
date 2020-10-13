@@ -1,19 +1,30 @@
-import React, { useEffect } from "react";
-import "./ListJobs.css";
-import Jobs from "../data.json";
+import React, { useEffect, useState, useContext } from "react";
+import { InfoContext } from "../context/InfoContext";
+import { SortContext } from "../context/SortContext";
 import JobCard from "./JobCard";
+import defaultData from "../context/api/data/data.json";
 
-const ListJobs = () => {
+function ListJobs(onAddSort) {
+  const [data, setData] = useState(defaultData);
+  const fetchData = useContext(InfoContext);
+  console.log(fetchData())
+  const { sorts } = useContext(SortContext);
+  console.log(sorts)
+
   useEffect(() => {
-    console.log(Jobs);
-  });
+    const getData = async () => {
+      const result = await fetchData(sorts);
+      setData(result);
+    };
+    getData();
+  }, [sorts, fetchData]);
   return (
     <div>
-      {Jobs.map((job) => (
-        <JobCard jobs={job} key={job.id} />
+      {data.map((job) => (
+        <JobCard jobs={job} key={job.id} onAddSort={onAddSort} />
       ))}
     </div>
   );
-};
+}
 
 export default ListJobs;
